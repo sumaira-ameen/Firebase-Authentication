@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+            <input type="text" placeholder="First Name" required id="first_name">
+            <input type="text" placeholder="Last Name" required id="last_name">
+            <input type="tel" placeholder="Number" required id="number">
+            <input type="email" placeholder="Email" required id="email">
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password"  id="con_password" required>
+            <button type="submit" id="signup_btn">Sign Up</button>
+            <button type="button" class="google-btn" id="google-btn">Sign Up with Google   <i class="fa-brands fa-google" style="color: #ffffff;"></i></button>
+
+            <!-- <button id="google-btn" class="google-signup-btn google-btn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google Logo" class="google-logo">
+                Sign up with Google
+            </button> -->
+        </form>
+        <p>Already have an account? <a href="signin.html">Sign In</a></p>
+    </div>
+
+<script src="firebase.js" type="module"></script>   
+<script src="app.js" type="module"></script>   
+</body>
+</html>

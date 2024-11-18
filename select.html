@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Select Quiz Type</title>
+</head>
+<body>
+    <div class="container quiz-selection-container">
+        <header>
+            <h2>Select Your Quiz Type</h2>
+            <button class="logout-btn" id="logout-btn">Log Out</button>
+        </header>
+        <main>
+            <p>What type of quiz would you like to take?</p>
+            <div class="quiz-options">
+                <button class="quiz-btn" id="html">HTML Quiz</button>
+                <button class="quiz-btn" id="css">CSS Quiz</button>
+                <button class="quiz-btn" id="js">JavaScript Quiz</button>
+            </div>
+        </main>
+        <footer>
+            <p><a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
+        </footer>
+    </div>
+
+<script src="firebase.js" type="module"></script>   
+<script src="app.js" type="module"></script>
+<script src="select.js"></script>
+
+</body>
+</html>

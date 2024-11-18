@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+                <h2>Welcome to
+                <br>
+                 Web Dev Quizzes</h2>
+        </header>
+        <main>
+            <p>Ready to test your knowledge?</p>
+            <p>Before you can start the quiz, please sign up or sign in.</p>
+
+            <div class="auth-buttons">
+                <button class="signin-btn" id="signin-btn">Sign In</button>
+                <button class="signup-btn" id="signup-btn">Sign Up</button>
+            </div>
+        </main>
+        <footer>
+            <p><a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
+        </footer>
+    </div>
+    <script>
+const signUp = document.getElementById("signup-btn")
+const signIn = document.getElementById("signin-btn")
+
+signUp.addEventListener("click", () => {
+    window.location.href = "signup.html";
+});
+signIn.addEventListener("click", () => {
+    window.location.href = "signin.html";
+});
+    </script>
+</body>
+</html>
